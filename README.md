@@ -123,18 +123,18 @@ If you plan to modify the Docker image, watch out for version compatibility of `
 
 ### Failed to contact link_attacher_node
 
-If gazebo_ros_link_attacher plugin is not responsive, manually attach links like so:
+If gazebo_ros_link_attacher plugin is not responsive, manually attach links like so (e.g. `blue cube`):
 ```bash
-rosservice call /link_attacher_node/attach "model_name_1: 'unit_box_1'
+rosservice call /link_attacher_node/attach "model_name_1: 'blue_cube'
 link_name_1: 'link'
-model_name_2: 'unit_sphere_1'
+model_name_2: 'gripper_link_sub'
 link_name_2: 'link'"
 ```
 and detach like so:
 ```bash
-rosservice call /link_attacher_node/detach "model_name_1: 'unit_box_1'
+rosservice call /link_attacher_node/detach "model_name_1: 'blue_cube'
 link_name_1: 'link'
-model_name_2: 'unit_sphere_1'
+model_name_2: 'gripper_link_sub'
 link_name_2: 'link'"
 ```
 
