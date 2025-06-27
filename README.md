@@ -3,6 +3,17 @@
 Watch it in action:
 ![Speed 2x & Duplicate Frames removed](FullAnimationSpeedupLQ.gif)
 
+# Docker Instructions
+
+```bash ./build.sh ``` builds the Docker image.
+```bash ./start.sh``` starts the Docker container.
+```bash ./connect.sh``` connects to the running container.
+
+## Hints:
+
+First spin of Docker container serves Ollama to pull models ```bash nomic-embed-text``` & ```bash gemma3:4b``` via ```bash entrypoint.sh```.
+Remove ```bash -rm``` flag in ```bash start.sh``` for container to persist upon exit.
+
 # Tower of Hanoi Robot Simulation – Execution Instructions
 
 This guide explains how to run the complete Tower of Hanoi simulation with the integrated robot learning pipeline. The simulation requires five terminal windows and the use of a conda-based virtual environment.
@@ -86,4 +97,21 @@ python src/my_scripts/assignment_3/Docker_volume/toh_solver_group_5_prototype.py
 
 ```
 
+```
+
+## Troubleshooting:
+
+If gazebo_ros_link_attacher plugin is not responsive, manually attach links like so:
+```bash
+rosservice call /link_attacher_node/attach "model_name_1: 'unit_box_1'
+link_name_1: 'link'
+model_name_2: 'unit_sphere_1'
+link_name_2: 'link'"
+```
+and detach like so:
+```bash
+rosservice call /link_attacher_node/detach "model_name_1: 'unit_box_1'
+link_name_1: 'link'
+model_name_2: 'unit_sphere_1'
+link_name_2: 'link'"
 ```
