@@ -115,6 +115,12 @@ python src/my_scripts/assignment_3/Docker_volume/toh_solver_group_5_prototype.py
 
 ## Troubleshooting:
 
+### Image not building
+The created Docker image will be about 30GB in size. \
+If your build stays at `[35/39] RUN conda env create -f /tmp/llm_env.ymal && conda clean -afy` for >1 hour, abort & rebuild.
+
+### Failed to contact link_attacher_node
+
 If gazebo_ros_link_attacher plugin is not responsive, manually attach links like so:
 ```bash
 rosservice call /link_attacher_node/attach "model_name_1: 'unit_box_1'
@@ -129,3 +135,5 @@ link_name_1: 'link'
 model_name_2: 'unit_sphere_1'
 link_name_2: 'link'"
 ```
+
+
