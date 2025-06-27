@@ -5,9 +5,18 @@ Watch it in action:
 
 # Docker Instructions
 
-`./build.sh` builds the Docker image. \
-`./start.sh` starts the Docker container. \
-`./connect.sh` connects to the running container.
+Build the Docker image
+```bash
+./build.sh
+```
+Start the Docker container
+```bash
+./start.sh
+```
+Connect to running container
+```bash
+./connect.sh
+```
 
 ## Hints:
 
