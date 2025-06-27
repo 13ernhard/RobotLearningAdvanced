@@ -138,5 +138,5 @@ model_name_2: 'gripper_link_sub'
 link_name_2: 'link'"
 ```
 
-Alternatively, update `toh_solver_group_5_prototype.py` to add a failsafe, checking whether `link_attacher_node` is found in `rosservice.get_service_list()`.
+Alternatively, update `toh_solver_group_5_prototype.py` to add a failsafe, checking whether `link_attacher_node` is found using `rosservice.get_service_list()`.
 
