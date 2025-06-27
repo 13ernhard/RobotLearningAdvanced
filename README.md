@@ -20,7 +20,7 @@ Connect to running container
 
 ## Hints:
 
-First spin of Docker container serves Ollama to pull models `nomic-embed-text` & `gemma3:4b` via `entrypoint.sh`.
+First container spin serves Ollama to pull models `nomic-embed-text` & `gemma3:4b` via `entrypoint.sh`. \
 Remove `-rm` flag in `start.sh` for container to persist upon exit.
 
 # Tower of Hanoi Robot Simulation – Execution Instructions
