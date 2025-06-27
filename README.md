@@ -29,7 +29,8 @@ Proceed with `Starting the Simulation` from `Tower of Hanoi Robot Simulation - E
 
 # Tower of Hanoi Robot Simulation – Execution Instructions
 
-This guide explains how to run the complete Tower of Hanoi simulation with the integrated robot learning pipeline. The simulation requires five terminal windows and the use of a conda-based virtual environment.
+This guide explains how to run the complete Tower of Hanoi simulation with the integrated robot learning pipeline. \
+The simulation requires five terminal windows and the use of a conda-based virtual environment.
 
 ## python scripts
 
