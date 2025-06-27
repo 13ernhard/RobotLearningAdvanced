@@ -23,7 +23,8 @@ Connect to running container
 First container spin serves Ollama to pull models `nomic-embed-text` & `gemma3:4b` via `entrypoint.sh`. \
 Remove `-rm` flag in `start.sh` for container to persist upon exit. \
 
-`entrypoint.sh` already sources the environent, proceed with `Starting the Simulation` from `Tower of Hanoi Robot Simulation - Execution Instructions` below.
+The file `entrypoint.sh` already sources the environent. \
+Proceed with `Starting the Simulation` from `Tower of Hanoi Robot Simulation - Execution Instructions` below.
 
 
 # Tower of Hanoi Robot Simulation – Execution Instructions
