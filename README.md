@@ -119,7 +119,7 @@ python src/my_scripts/assignment_3/Docker_volume/toh_solver_group_5_prototype.py
 The created Docker image will be about 30GB in size. \
 If your build stays at `[35/39] RUN conda env create -f /tmp/llm_env.ymal && conda clean -afy` for >1 hour, abort & rebuild.
 
-If you plan to modify the Docker image, watch out for version compatibility of `protobuf` & `chromadb`
+If you plan to modify the Docker image, watch out for version compatibility of `protobuf` & `chromadb`.
 
 ### Failed to contact link_attacher_node
 
